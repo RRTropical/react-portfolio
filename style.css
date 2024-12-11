@@ -1,0 +1,107 @@
+* {
+  font-family: sans-serif;
+  color: #fff;
+  transition: 0.3s;
+}
+
+body {
+  background-color: #121824;
+  overflow-x: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.25rem;
+  color: #818896;
+}
+
+.hero img {
+  max-height: 300px;
+  max-width: 500px;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.hero h1 {
+    margin-bottom: -15px;
+}
+
+.hero p {
+    margin-bottom: 15px;
+    width: 600px;
+}
+
+.navBar {
+  width: 100%;
+  height: 60px;
+  background-color: #1c2430;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #818896;
+  margin-left: 15px;
+}
+
+.nav i {
+  color: #818896;
+}
+
+.nav a:hover {
+  color: #fff;
+}
+
+.nav a:hover i {
+  color: #fff;
+}
+
+.navBar h1 {
+  margin-left: 20px;
+}
+
+.nav {
+  margin-right: 20px;
+}
+
+.hero button {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+}
+
+.primaryButton {
+  background-color: #6c63ff;
+}
+
+.primaryButton:hover {
+  background-color: #4b42ff;
+}
+
+.secondaryButton {
+  background-color: #1c2430;
+  color: #818896;
+}
+
+.secondaryButton:hover {
+    background-color: #182231;
+}
