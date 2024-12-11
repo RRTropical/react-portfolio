@@ -105,3 +105,9 @@ p {
 .secondaryButton:hover {
     background-color: #182231;
 }
+
+@media (max-width: 1130px) {
+    .hero {
+        flex-direction: column;
+    }
+}
