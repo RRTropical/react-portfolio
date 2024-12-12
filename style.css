@@ -7,14 +7,15 @@
 body {
   background-color: #121824;
   overflow-x: hidden;
+  margin: 0;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 3.3rem;
 }
 
 p {
@@ -23,31 +24,37 @@ p {
 }
 
 .hero img {
-  max-height: 300px;
-  max-width: 500px;
+  max-height: 400px;
+  max-width: 100%;
+  margin-right: 8%;
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
+  padding: 80px 20px 20px;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-left: 20px;
 }
 
+.heroInfo {
+  max-width: 600px;
+}
+
 .hero h1 {
-    margin-bottom: -15px;
+  margin-bottom: -15px;
 }
 
 .hero p {
-    margin-bottom: 15px;
-    width: 600px;
+  margin-bottom: 15px;
+  width: 100%;
 }
 
 .navBar {
   width: 100%;
   height: 60px;
-  background-color: #1c2430;
   position: fixed;
   top: 0;
   left: 0;
@@ -60,6 +67,7 @@ p {
   text-decoration: none;
   color: #818896;
   margin-left: 15px;
+  font-size: 1.3rem;
 }
 
 .nav i {
@@ -67,15 +75,21 @@ p {
 }
 
 .nav a:hover {
-  color: #fff;
+  color: #6c63ff;
 }
 
 .nav a:hover i {
-  color: #fff;
+  color: #6c63ff;
+}
+
+.highlight {
+  color: #6c63ff;
 }
 
 .navBar h1 {
   margin-left: 20px;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .nav {
@@ -91,6 +105,7 @@ p {
 
 .primaryButton {
   background-color: #6c63ff;
+  margin-right: 15px;
 }
 
 .primaryButton:hover {
@@ -103,11 +118,98 @@ p {
 }
 
 .secondaryButton:hover {
-    background-color: #182231;
+  background-color: #182231;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+@media (max-width: 1500px) {
+  .hero img {
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 1130px) {
-    .hero {
-        flex-direction: column;
-    }
+  .hero {
+    margin: 0;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .heroInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero img {
+    margin-right: 0;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .hero button {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navBar {
+    height: fit-content;
+    background-color: #1c2430;
+  }
+  .navBar h1 .highlight {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+  }
+  .nav {
+    display: none;
+  }
+
+  .navBar .hamburger {
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
+
+  .navBar.active {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .nav.active {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .nav a {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero {
+    padding-top: 120px;
+  }
 }
