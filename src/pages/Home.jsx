@@ -1,6 +1,10 @@
 export default function Home() {
-  const handleClick = () => {
+  const contactClick = () => {
     location.href = "/contact";
+    ``;
+  };
+  const projectClick = () => {
+    location.href = "/projects";
   };
   return (
     <>
@@ -15,10 +19,12 @@ export default function Home() {
             responsive websites and applications that deliver seamless user
             experiences.
           </p>
-          <button className="primaryButton" onClick={handleClick}>
+          <button className="primaryButton" onClick={contactClick}>
             Work with me
           </button>
-          <button className="secondaryButton">See my work</button>
+          <button className="secondaryButton" onClick={projectClick}>
+            See my work
+          </button>
         </div>
         <img src="src\assets\version control.png" alt="" />
       </section>
