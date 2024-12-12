@@ -87,13 +87,12 @@ p {
 }
 
 .navBar h1 {
-  margin-left: 20px;
+  margin-left: 40px;
   font-size: 2rem;
-  cursor: pointer;
 }
 
 .nav {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .hero button {
