@@ -1,15 +1,21 @@
 export default function Home() {
   const contactClick = () => {
     location.href = "/contact";
-    ``;
+    window.scrollTo(0,0)
   };
   const projectClick = () => {
     location.href = "/projects";
   };
+
+  const aboutClick = () => {
+    location.href = "/about";
+  };
+
   return (
     <>
       <section className="hero">
         <div className="heroInfo">
+          <h4>WEB DEVELOPER AND DESIGNER</h4>
           <h1>
             Hi, I'm <span className="highlight">Lorenzo</span>. <br />I love to
             build amazing websites.
@@ -22,8 +28,8 @@ export default function Home() {
           <button className="primaryButton" onClick={contactClick}>
             Work with me
           </button>
-          <button className="secondaryButton" onClick={projectClick}>
-            See my work
+          <button className="secondaryButton" onClick={aboutClick}>
+            Learn more
           </button>
         </div>
         <img src="src\assets\version control.png" alt="A guy using a laptop" />
@@ -41,16 +47,8 @@ export default function Home() {
             apps. I enjoy working with modern tools like Node.js and React to
             bring ideas to life and create products that stand out.
           </p>
-          <button
-            className="primaryButton"
-            onClick={() => {
-              window.open("https://www.instagram.com/its_t3nnessee/", "_blank");
-            }}
-          >
-            <i className="fa-brands fa-instagram"></i> DM me
-          </button>
-          <button className="secondaryButton">
-            <i className="fa-solid fa-envelope"></i> Email me
+          <button className="primaryButton" onClick={projectClick}>
+            See my work
           </button>
         </div>
         <img

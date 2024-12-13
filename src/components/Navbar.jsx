@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 export default function Navbar() {
   useEffect(() => {
-    // Highlight active navigation link based on the current path
+    
     const links = document.querySelectorAll(".nav a");
     links.forEach((link) => {
       const href = link.href;
@@ -19,7 +19,7 @@ export default function Navbar() {
       }
     });
 
-    // Update navbar background color on scroll
+    
     const updateNavbar = () => {
       if (window.innerWidth > 768) {
         const navBar = document.querySelector(".navBar");
@@ -33,14 +33,14 @@ export default function Navbar() {
 
     window.addEventListener("scroll", updateNavbar);
 
-    // Cleanup event listener on component unmount
+    
     return () => {
       window.removeEventListener("scroll", updateNavbar);
     };
   }, []);
 
   const handleClick = () => {
-    // Toggle active state for navigation and hamburger menu
+    
     const nav = document.querySelector(".nav");
     const navBar = document.querySelector(".navBar");
     const menu = document.querySelector(".hamburger i");
