@@ -12,10 +12,14 @@ body {
 
 button {
   cursor: pointer;
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
 }
 
 h1 {
-  font-size: 3.3rem;
+  font-size: 3rem;
 }
 
 p {
@@ -23,13 +27,15 @@ p {
   color: #818896;
 }
 
-.hero img {
+.hero img,
+.intro img {
   max-height: 400px;
   max-width: 100%;
   margin-right: 8%;
 }
 
-.hero {
+.hero,
+.intro {
   min-height: 100vh;
   padding: 80px 20px 20px;
   box-sizing: border-box;
@@ -39,15 +45,39 @@ p {
   margin-left: 20px;
 }
 
-.heroInfo {
+.heroInfo,
+.introInfo {
   max-width: 600px;
 }
 
-.hero h1 {
+.intro {
+  align-items: flex-start;
+  white-space: pre-wrap;
+  min-height: fit-content;
+}
+
+.intro button {
+  text-align: left;
+  padding-left: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.intro i {
+  font-size: 20px;
+}
+
+.intro img {
+  max-height: 300px;
+}
+
+.hero h1,
+.intro h1 {
   margin-bottom: -15px;
 }
 
-.hero p {
+.hero p,
+.intro p {
   margin-bottom: 15px;
   width: 100%;
 }
@@ -61,13 +91,14 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #1c2430;
 }
 
 .nav a {
   text-decoration: none;
   color: #818896;
   margin-left: 15px;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .nav i {
@@ -93,13 +124,6 @@ p {
 
 .nav {
   margin-right: 40px;
-}
-
-.hero button {
-  height: 40px;
-  width: 150px;
-  border: none;
-  border-radius: 5px;
 }
 
 .primaryButton {
@@ -128,39 +152,48 @@ p {
 }
 
 @media (max-width: 1500px) {
-  .hero img {
+  .hero img,
+  .intro img {
     margin-right: 20px;
   }
 }
 
 @media (max-width: 1130px) {
-  .hero {
+  .hero,
+  .intro {
     margin: 0;
     flex-direction: column-reverse;
     justify-content: center;
+    align-items: center;
     text-align: center;
     padding-top: 100px;
   }
 
-  .heroInfo {
+  .heroInfo,
+  .introInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .hero img {
+  .hero img,
+  .intro img {
     margin-right: 0;
   }
 
-  .hero h1 {
+  .hero h1,
+  .intro h1 {
     font-size: 2.5rem;
   }
 
-  .hero p {
+  .hero p,
+  .intro p {
     font-size: 1.1rem;
   }
 
-  .hero button {
+  button,
+  .primaryButton,
+  .secondaryButton {
     margin: 0;
     margin-bottom: 10px;
   }
@@ -169,7 +202,7 @@ p {
 @media (max-width: 768px) {
   .navBar {
     height: fit-content;
-    background-color: #1c2430;
+    background-color: #1c2430 !important;
   }
   .navBar h1 .highlight {
     position: absolute;
