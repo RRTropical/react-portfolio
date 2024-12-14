@@ -34,7 +34,6 @@ p {
   margin-right: 8%;
 }
 
-
 .hero,
 .intro {
   min-height: 100vh;
@@ -44,15 +43,6 @@ p {
   align-items: center;
   justify-content: space-between;
   margin-left: 20px;
-}
-
-.skillSet {
-  flex-direction: column;
-  min-height: 100vh;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .heroInfo,
@@ -65,7 +55,6 @@ p {
   white-space: pre-wrap;
   min-height: fit-content;
 }
-
 
 .intro i {
   font-size: 20px;
@@ -259,10 +248,38 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .skill {
   height: 70px;
   width: 120px;
-  background-color: red;
+  border-radius: 5px;
+  border: 1px solid #6c63ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.skill:hover {
+  background-color: #6c63ff;
+  transform: scale(1.1);
+}
+
+.skill img {
+  width: 50px;
+  height: 50px;
+}
+
+.skillSet {
+  flex-direction: column;
+  gap: 15px;
+  min-height: fit-content;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
 }
