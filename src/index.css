@@ -449,6 +449,7 @@ p {
 }
 
 .hero form textarea {
+  resize: none;
   height: 120px;
   width: 95%;
   background-color: #11121b;
