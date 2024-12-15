@@ -18,26 +18,26 @@ button {
   border-radius: 5px;
 }
 
-/* Style for the scrollbar */
+
 ::-webkit-scrollbar {
-  width: 6px; /* Width of the scrollbar */
+  width: 6px;
 }
 
-/* Style for the scrollbar track (background) */
+
 ::-webkit-scrollbar-track {
-  background: transparent; /* Light gray background */
+  background: transparent;
   border-radius: 10px;
 }
 
-/* Style for the scrollbar thumb (the draggable part) */
+
 ::-webkit-scrollbar-thumb {
-  background: #6c63ff; /* Darker gray color */
+  background: #6c63ff;
   border-radius: 10px;
 }
 
-/* Hover effect for the scrollbar thumb */
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Darker gray on hover */
+  background: #4b42ff;
 }
 
 a {
@@ -379,7 +379,6 @@ p {
   background: repeating-linear-gradient();
   box-sizing: border-box;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
