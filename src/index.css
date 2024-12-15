@@ -18,6 +18,32 @@ button {
   border-radius: 5px;
 }
 
+/* Style for the scrollbar */
+::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+/* Style for the scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background: transparent; /* Light gray background */
+  border-radius: 10px;
+}
+
+/* Style for the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #6c63ff; /* Darker gray color */
+  border-radius: 10px;
+}
+
+/* Hover effect for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker gray on hover */
+}
+
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-size: 3rem;
 }
@@ -87,7 +113,6 @@ p {
 }
 
 .nav a {
-  text-decoration: none;
   color: #818896;
   margin-left: 15px;
   font-size: 1.1rem;
@@ -165,6 +190,15 @@ p {
     align-items: center;
     text-align: center;
     padding-top: 100px;
+  }
+
+  .contactPage {
+    flex-direction: column;
+  }
+
+  .hero form {
+    justify-content: center;
+    align-items: center;
   }
 
   .heroInfo,
@@ -265,7 +299,7 @@ p {
 
 .skill:hover {
   background-color: #6c63ff;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .skill img {
@@ -282,4 +316,173 @@ p {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 20px;
+}
+
+.project {
+  height: 300px;
+  width: 220px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #6c63ff;
+  -webkit-box-shadow: 0 0 20px #6c63ff;
+  -moz-box-shadow: 0 0 20px #6c63ff;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project img {
+  width: 210px;
+  height: 150px;
+}
+
+.project p {
+  width: 200px;
+}
+
+.projectInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 80%;
+  width: 100%;
+}
+
+.projectInfo h2 {
+  margin: 0;
+  margin-bottom: -15px;
+}
+
+.projectInfo p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  width: 95%;
+}
+
+.projectInfo button {
+  width: 120px;
+  background-color: #6c63ff;
+}
+
+.projectInfo button:hover {
+  background-color: #4b42ff;
+}
+
+.projectSection {
+  min-height: 100vh;
+  background: repeating-linear-gradient();
+  box-sizing: border-box;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.projectPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+.proj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.proj h1 {
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.hero form {
+  height: 450px;
+  width: 425px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 15px;
+  border: 2px solid #6c63ff;
+}
+
+.hero form h4 {
+  margin: 0;
+}
+
+.hero form h2 {
+  margin-bottom: 0;
+}
+
+.hero form input {
+  height: 35px;
+  width: 95%;
+  background-color: #11121b;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  text-indent: 15px;
+}
+
+.hero form input:focus,
+.hero form textarea:focus {
+  outline: 2px solid #6c63ff;
+}
+
+.hero form button {
+  background-color: #6c63ff;
+}
+
+.hero form button:hover {
+  background-color: #4b42ff;
+}
+
+.hero form textarea {
+  height: 120px;
+  width: 95%;
+  background-color: #11121b;
+  border-radius: 5px;
+  border: none;
+}
+
+.contactButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.contactButton i {
+  font-size: 20px;
+}
+
+@media (max-width: 480px) {
+  .hero form {
+    height: 350px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .hero form input {
+    height: 50px;
+  }
+  .hero form input,
+  .hero form textarea {
+    width: 90%;
+  }
+  .hero form button {
+    height: 55px;
+  }
 }
