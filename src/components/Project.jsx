@@ -1,7 +1,7 @@
 export default function Project({
   name = "Example",
   description = "This is an example card to represent one of my projects.",
-  path = "src/assets/Projects/example.png",
+  path = "/assets/Projects/example.png",
   link = "/",
 }) {
   return (

@@ -17,7 +17,7 @@ export default function About() {
             for both myself and other people.
           </p>
         </div>
-        <img src="\src\assets\coding.png" alt="A guy using a laptop" />
+        <img src="/assets/coding.png" alt="A guy using a laptop" />
       </section>
       <section className="techs">
         <div className="skillSet">
@@ -27,27 +27,27 @@ export default function About() {
           <div className="skills">
             <Tech
               link="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwieiajksaaKAxXFhIkEHZlOFacQFnoECBAQAQ&url=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FJavaScript&usg=AOvVaw1Il_CfTbNi4CXc-0nBN5rP&opi=89978449"
-              path="src\assets\Tech Skills\javascript.svg"
+              path="/assets/Tech Skills/javascript.svg"
             />
             <Tech
               link="https://nodejs.org/en"
-              path="src\assets\Tech Skills\nodejs.svg"
+              path="/assets/Tech Skills/nodejs.svg"
             />
             <Tech
               link="https://www.python.org"
-              path="src\assets\Tech Skills\python.svg"
+              path="/assets/Tech Skills/python.svg"
             />
             <Tech
               link="https://react.dev/"
-              path="src\assets\Tech Skills\react.svg"
+              path="/assets/Tech Skills/react.svg"
             />
             <Tech
               link="https://tailwindcss.com"
-              path="src\assets\Tech Skills\tailwind.svg"
+              path="/assets/Tech Skills/tailwind.svg"
             />
             <Tech
               link="https://www.typescriptlang.org"
-              path="src\assets\Tech Skills\typescript.svg"
+              path="/assets/Tech Skills/typescript.svg"
             />
           </div>
           <h1>
@@ -56,19 +56,19 @@ export default function About() {
           <div className="skills">
             <Tech
               link="https://www.apple.com/mac/"
-              path="src\assets\Tech Skills\macos.svg"
+              path="/assets/Tech Skills/macos.svg"
             />
             <Tech
               link="https://code.visualstudio.com"
-              path="src\assets\Tech Skills\vscode.svg"
+              path="/assets/Tech Skills/vscode.svg"
             />
             <Tech
               link="https://www.microsoft.com/en-us/windows?r=1"
-              path="src\assets\Tech Skills\windows.svg"
+              path="/assets/Tech Skills/windows.svg"
             />
             <Tech
               link="https://figma.com"
-              path="src\assets\Tech Skills\figma.svg"
+              path="/assets/Tech Skills/figma.svg"
             />
           </div>
         </div>

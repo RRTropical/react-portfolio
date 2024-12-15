@@ -1,7 +1,7 @@
 export default function Home() {
   const contactClick = () => {
     location.href = "/contact";
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0);
   };
   const projectClick = () => {
     location.href = "/projects";
@@ -32,7 +32,7 @@ export default function Home() {
             Learn more
           </button>
         </div>
-        <img src="src\assets\version control.png" alt="A guy using a laptop" />
+        <img src="/assets/version control.png" alt="A guy using a laptop" />
       </section>
       <section className="intro">
         <div className="introInfo">
@@ -52,7 +52,7 @@ export default function Home() {
           </button>
         </div>
         <img
-          src="src\assets\avatar.png"
+          src="/assets/avatar.png"
           alt="A graphic resembling Lorenzo Cooks"
         />
       </section>

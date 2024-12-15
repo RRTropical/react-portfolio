@@ -14,7 +14,7 @@ export default function Projects() {
           <Project
             name="Flipnote"
             description="A creative note-taking website using vanilla HTML, CSS, and JS."
-            path="src/assets/Projects/flipnote.png"
+            path="/assets/Projects/flipnote.png"
             link="https://lcflipnote.netlify.app"
           />
         </section>
