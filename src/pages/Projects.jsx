@@ -13,9 +13,15 @@ export default function Projects() {
         <section className="projectSection">
           <Project
             name="Flipnote"
-            description="A creative note-taking website using vanilla HTML, CSS, and JS."
+            description="A creative note-taking app using vanilla HTML, CSS, and JS."
             path="/assets/Projects/flipnote.png"
             link="https://lcflipnote.netlify.app"
+          />
+          <Project
+            name="Votable"
+            description="A poll app using React and Firebase."
+            path="/assets/Projects/votable.png"
+            link="https://votable.netlify.app"
           />
         </section>
       </div>
